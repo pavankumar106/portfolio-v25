@@ -1,0 +1,6 @@
+16 nov 2025
+01]basix setup and side bar ui-done
+02]add a global loader- wip
+03] use lazy load for non default comps
+04] use routes for error messages
+05]

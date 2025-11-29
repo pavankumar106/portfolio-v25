@@ -1,0 +1,28 @@
+.main-view {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  .sidebar {
+    flex: 0 0 20%;
+    border-right: 1px solid #bc2727;
+  }
+
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+}
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+  .main-view {
+    .sidebar {
+      display: none;
+    }
+
+    .content {
+      width: 100%;
+    }
+  }
+}

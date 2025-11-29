@@ -1,0 +1,101 @@
+.about-section {
+  padding: 2rem;
+  .heading {
+    margin: 1rem 0;
+    border-bottom: 2px solid #bc2727;
+    width: max-content;
+  }
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .contact {
+    margin-top: 2rem;
+    h2 {
+      border-bottom: 2px solid #bc2727;
+      width: max-content;
+      margin: 1rem 0;
+    }
+  }
+  .contact-list {
+    margin: 1rem 0;
+    // list-style: none;
+    .email {
+      width: max-content;
+      cursor: pointer;
+      &:hover {
+        color: #bc2727;
+      }
+    }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin: 0.5rem 0;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          color: #bc2727;
+        }
+      }
+    }
+  }
+  .about-item {
+    margin: 1rem 0;
+    font-weight: bold;
+    width: max-content;
+    border-bottom: 2px solid #bc2727;
+  }
+  //   skills
+  .skills {
+    .skills-list {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(2, 1fr);
+      .skill-item {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: start;
+        padding: 1rem;
+        border-radius: 8px;
+        background-color: #112240;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        &:hover {
+          background-color: #06203c;
+        }
+        .skill-icon {
+          background-color: transparent !important;
+          .icon {
+            background-color: transparent !important;
+            font-size: 2rem;
+            color: #bc2727;
+          }
+        }
+        .skill-name {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+/* desktop - 3 columns */
+@media (min-width: 1024px) {
+  .about-section .skills .skills-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* small mobile - 1 column */
+@media (max-width: 480px) {
+  .about-section .skills .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
