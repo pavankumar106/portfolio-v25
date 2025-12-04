@@ -1,14 +1,12 @@
-import { useState } from "react";
-
 import MainView from "./sections/mainView/MainView";
 
 import "./App.scss";
-import MobileNav from "./sections/mobileNav/MobileNav";
+import Loader from "./components/loader/Loader";
 
 function App() {
   return (
     <>
-      <MobileNav />
+      <Loader />
       <MainView />
     </>
   );

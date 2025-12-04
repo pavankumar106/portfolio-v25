@@ -1,10 +1,8 @@
 import { FaCode } from "react-icons/fa";
-import { useState } from "react";
 
 import "./MobileNav.scss";
 
-const MobileNav = () => {
-  const [activeSection, setActiveSection] = useState("about");
+const MobileNav = ({ activeSection, setActiveSection }) => {
   const renderSection = () => {
     switch (activeSection) {
       case "about":

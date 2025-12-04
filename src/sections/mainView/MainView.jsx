@@ -4,6 +4,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import Loader from "../../components/loader/Loader";
 
 import "./MainView.scss";
+import MobileNav from "../mobileNav/MobileNav";
 
 const About = lazy(() => import("../about/About"));
 const Projects = lazy(() => import("../projects/Projects"));
@@ -28,17 +29,23 @@ const MainView = () => {
     }
   };
   return (
-    <div className="main-view">
-      {/* side bar */}
-      <Sidebar
+    <>
+      <MobileNav
         activeSection={activeSection}
         setActiveSection={setActiveSection}
       />
-      {/* content view */}
-      <div className="content">
-        <Suspense fallback={<Loader />}>{renderSection()}</Suspense>
+      <div className="main-view">
+        {/* side bar */}
+        <Sidebar
+          activeSection={activeSection}
+          setActiveSection={setActiveSection}
+        />
+        {/* content view */}
+        <div className="content">
+          <Suspense fallback={<Loader />}>{renderSection()}</Suspense>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default MainView;
