@@ -1,0 +1,29 @@
+.custom-loadmask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  .loader {
+    height: 1rem;
+    width: 1rem;
+    border: 0.2rem solid #bc2727;
+    border-top: 0.2rem solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  .loader-text {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: #bc2727;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

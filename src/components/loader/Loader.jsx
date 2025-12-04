@@ -1,26 +1,10 @@
-import "./Loader.module.scss";
+import "./Loader.scss";
 
 const Loader = ({ text = "Loading..." }) => {
   return (
     <div className="custom-loadmask">
-      <div className="loader">
-        <span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <div className="base">
-          <span></span>
-          <div className="face"></div>
-        </div>
-      </div>
-      <div className="longfazers">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div className="loader"></div>
+      <div className="loader-text">{text}</div>
     </div>
   );
 };
