@@ -83,13 +83,16 @@ const About = () => {
           </li>
           <li>
             <IoLogoLinkedin />
-            <a href="https://www.linkedin.com/in/pavankumar-guttedar-1027631b2/">
+            <a
+              href="https://www.linkedin.com/in/pavankumar-guttedar-1027631b2/"
+              target="_blank"
+            >
               Connect with me on LinkedIn
             </a>
           </li>
           <li>
             <FaSquareGithub />
-            <a href="https://www.linkedin.com/in/pavankumar-guttedar-1027631b2/">
+            <a href="https://github.com/pavankumar106" target="_blank">
               Check my GitHub
             </a>
           </li>
