@@ -24,14 +24,28 @@ const MobileNav = ({ activeSection, setActiveSection }) => {
         <span>Pavan.dev</span>
       </div>
       <div className="nav-links">
-        <div className={activeSection === "about" ? "active" : ""}>About</div>
-        <div className={activeSection === "projects" ? "active" : ""}>
+        <div
+          className={activeSection === "about" ? "active" : ""}
+          onClick={() => setActiveSection("about")}
+        >
+          About
+        </div>
+        <div
+          className={activeSection === "projects" ? "active" : ""}
+          onClick={() => setActiveSection("projects")}
+        >
           Projects
         </div>
-        <div className={activeSection === "experience" ? "active" : ""}>
+        <div
+          className={activeSection === "experience" ? "active" : ""}
+          onClick={() => setActiveSection("experience")}
+        >
           Experience
         </div>
-        <div className={activeSection === "education" ? "active" : ""}>
+        <div
+          className={activeSection === "education" ? "active" : ""}
+          onClick={() => setActiveSection("education")}
+        >
           Education
         </div>
       </div>
