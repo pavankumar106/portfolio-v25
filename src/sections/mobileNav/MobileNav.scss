@@ -16,6 +16,11 @@
     display: flex;
     gap: 0.5em;
     margin-top: 1rem;
+    .active {
+      font-weight: bold;
+      text-decoration: none;
+      color: #bc2727;
+    }
   }
 }
 
